@@ -1,7 +1,7 @@
 const readLineSync = require('readline-sync');
 
 function getUserLocation() {
-    const userLocationInput = readLineSync.question('What is the location? ').toLowerCase();
+    const userLocationInput = readLineSync.question('What is the location? Enter a city, latitude/longitude US, UK, or canadians postcode. ');
     return checkUserInput(userLocationInput) ? userLocationInput : getUserLocation();
     function checkUserInput(userInput) {
         if (userInput) {
